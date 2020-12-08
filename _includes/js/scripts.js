@@ -1,24 +1,24 @@
 var users = [
     {
-        login:'jonathan',
-        pass:'jrf181101',
-        nome:'Jonathan R. de Fraga'
+        login: 'jonathan',
+        pass: 'jrf181101',
+        nome: 'Jonathan R. de Fraga'
     },
     {
-        login:'cintia',
-        pass:'cintia',
-        nome:'Cíntia S. Kamainski'
+        login: 'cintia',
+        pass: 'cintia',
+        nome: 'Cíntia S. Kamainski'
     },
     {
-        login:'admin',
-        pass:'admin',
-        nome:'Administrador'
+        login: 'admin',
+        pass: 'admin',
+        nome: 'Administrador'
     }
 ];
 
 sessionStorage.setItem('user', null);
 
-$('#ic-menu').click( function () {
+$('#ic-menu').click(function () {
     console.log($('#ic-menu'));
     var div = $('#div-menus');
     if (div.hasClass('show')) {
@@ -55,12 +55,21 @@ function login() {
         console.log(pass === passBd);
         console.log(passBd);
         console.log(pass);
-        if (pass === passBd){
+        if (pass === passBd) {
             sessionStorage.setItem('user', JSON.stringify(users[index]));
             console.log('a');
             console.log('a');
             return true;
-        } 
+        }
     }
     return false;
+}
+
+function logout() {
+    sessionStorage.setItem('user', null);
+    window.location.href = '../../index.html'
+}
+
+if (verificaLogin) { 
+    $('#op-sair').removeClass('hidden');
 }
