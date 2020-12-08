@@ -39,12 +39,12 @@ a:visited {
 .content {
     width: 100%;
     height: fit-content;
+    min-height: 74.35vh;
 }
 
 .footer {
     width: 100%;
     height: 5rem;
-    position: absolute;
     bottom: 0;
     background-color: #0872FF;
 }
@@ -102,6 +102,101 @@ a:visited {
     padding: .3rem;
 }
 
+.div-menus ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.div-menus ul li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.content .login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.content{
+    overflow-x: hidden;
+}
+
+.content .login h2{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.content .login .form-auth{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.content .form-auth .form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.content .login label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content .login .input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.content .login .input:focus{
+    outline: none;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.content .login .form-auth .form-buttom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttom{
+    background-color: #0872FF;
+    width: 30%;
+    height: 2rem;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.buttom:hover,
+.buttom:focus{
+    background-color: #0e56b4;
+    box-shadow: #cacaca 2px 2px;
+    outline: none;
+    border: none;
+}
+
+.buttom:active{
+    background-color: #072e61;
+    box-shadow: #000 2px 2px; 
+    outline: none;
+    border: none;
+}
+
 @media(max-width:720px) {
     .div-title {
         width: 100%;
@@ -129,6 +224,9 @@ a:visited {
     .div-menus ul{
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .div-menus ul li a:hover{
     }
 
 }
