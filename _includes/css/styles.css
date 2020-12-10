@@ -237,18 +237,21 @@ a:visited {
     border: 1px solid #000;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 5%;
 }
 
 .center-calc .calc .visor .linha-sup{
-    width: 100%;
+    width: 90%;
     text-align: left;
     height: 25%;
+    font-size: 1rem;
 }
 
 .center-calc .calc .visor .linha-inf{
-    width: 100%;
+    width: 90%;
     text-align: left;
     height: 75%;
+    font-size: 1.5rem;
 }
 
 .center-calc .calc .teclas{
@@ -259,7 +262,6 @@ a:visited {
     flex-direction: row;
     justify-content: center;
     overflow: hidden;
-    font-weight: bold;
 }
 
 .center-calc .calc .teclas .numericas{
@@ -269,6 +271,7 @@ a:visited {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 
 .center-calc .calc .teclas .operacoes{
@@ -288,6 +291,7 @@ a:visited {
     align-items: center;
     border: 1px solid;
     margin: 0;
+    cursor: pointer;
 }
 
 .center-calc .calc .teclas .numericas .num-0{
@@ -299,6 +303,7 @@ a:visited {
     align-items: center;
     border: 1px solid;
     margin: 0;
+    cursor: pointer;
 }
 
 .center-calc .calc .teclas .operacoes .op{
@@ -310,6 +315,7 @@ a:visited {
     align-items: center;
     border: 1px solid;
     margin: 0;
+    cursor: pointer;
 }
 
 

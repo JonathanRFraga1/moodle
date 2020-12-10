@@ -69,3 +69,106 @@ if (verificaLogin()) {
 $('#op-sair').click(() => {
     logout();
 })
+
+var calc = '';
+var visor = '';
+
+var visor_inf = $('#visor-inf');
+
+$('#num0').click(() => {
+    calc += 0;
+    visor += 0;
+    visor_inf.html(visor);
+})
+
+$('#num1').click(() => {
+    calc += 1;
+    visor += 1;
+    visor_inf.html(visor);
+})
+
+$('#num2').click(() => {
+    calc += 2;
+    visor += 2;
+    visor_inf.html(visor);
+})
+
+$('#num3').click(() => {
+    calc += 3;
+    visor += 3;
+    visor_inf.html(visor);
+})
+
+$('#num4').click(() => {
+    calc += 4;
+    visor += 4;
+    visor_inf.html(visor);
+})
+
+$('#num5').click(() => {
+    calc += 5;
+    visor += 5;
+    visor_inf.html(visor);
+})
+
+$('#num6').click(() => {
+    calc += 6;
+    visor += 6;
+    visor_inf.html(visor);
+})
+
+$('#num7').click(() => {
+    calc += 7;
+    visor += 7;
+    visor_inf.html(visor);
+})
+
+$('#num8').click(() => {
+    calc += 8;
+    visor += 8;
+    visor_inf.html(visor);
+})
+
+$('#num9').click(() => {
+    calc += 9;
+    visor += 9;
+    visor_inf.html(visor);
+})
+
+$('#virgula').click(() => {
+    calc += '.';
+    visor += ',';
+    visor_inf.html(visor);
+})
+
+$('#plus').click(() => {
+    calc += '+';
+    visor += ' + ';
+    visor_inf.html(visor);
+})
+
+$('#minus').click(() => {
+    calc += '-';
+    visor += ' - ';
+    visor_inf.html(visor);
+})
+
+$('#times').click(() => {
+    calc += '*';
+    visor += ' x ';
+    visor_inf.html(visor);
+})
+
+$('#division').click(() => {
+    calc += '/';
+    visor += ' / ';
+    visor_inf.html(visor);
+})
+
+$('#equals').click(() => {
+    $('#visor-sup').html(visor);
+    let calculo = eval(calc);
+    visor_inf.html(calculo);
+    visor = '';
+    calc = '';
+})

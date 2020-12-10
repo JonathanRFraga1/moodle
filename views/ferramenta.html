@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Calculadora</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -43,8 +43,8 @@
             <div class="center-calc">
                 <div class="calc">
                     <div class="visor">
-                        <div class="linha-sup"></div>
-                        <div class="linha-inf">Calculadora em construção</div>
+                        <div class="linha-sup" id="visor-sup"></div>
+                        <div class="linha-inf" id="visor-inf">0</div>
                     </div>
                     <div class="teclas">
                         <div class="numericas">
@@ -61,11 +61,21 @@
                             <div class="num" id="virgula">,</div>
                         </div>
                         <div class="operacoes">
-                            <div class="op" id="plus">+</div>
-                            <div class="op" id="minus">-</div>
-                            <div class="op" id="times">x</div>
-                            <div class="op" id="division">/</div>
-                            <div class="op" id="equals">=</div>
+                            <div class="op" id="plus">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="op" id="minus">
+                                <i class="fas fa-minus"></i>
+                            </div>
+                            <div class="op" id="times">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div class="op" id="division">
+                                <i class="fas fa-divide"></i>
+                            </div>
+                            <div class="op" id="equals">
+                                <i class="fas fa-equals"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
