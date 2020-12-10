@@ -16,10 +16,7 @@ var users = [
     }
 ];
 
-sessionStorage.setItem('user', null);
-
 $('#ic-menu').click(function () {
-    console.log($('#ic-menu'));
     var div = $('#div-menus');
     if (div.hasClass('show')) {
         div.removeClass('show');
@@ -31,7 +28,7 @@ $('#ic-menu').click(function () {
 function verificaLogin() {
     let session = sessionStorage.getItem('user');
 
-    if (session === null) {
+    if (session === 'null' || session === 'undefined') {
         return false;
     }
 
@@ -52,13 +49,8 @@ function login() {
     if (find) {
         let pass = $('#input-senha').val().trim();
         let passBd = users[index].pass;
-        console.log(pass === passBd);
-        console.log(passBd);
-        console.log(pass);
         if (pass === passBd) {
             sessionStorage.setItem('user', JSON.stringify(users[index]));
-            console.log('a');
-            console.log('a');
             return true;
         }
     }
@@ -70,6 +62,10 @@ function logout() {
     window.location.href = '../../index.html'
 }
 
-if (verificaLogin) { 
+if (verificaLogin()) { 
     $('#op-sair').removeClass('hidden');
 }
+
+$('#op-sair').click(() => {
+    logout();
+})
