@@ -27,8 +27,7 @@ $('#ic-menu').click(function () {
 
 function verificaLogin() {
     let session = sessionStorage.getItem('user');
-
-    if (session === 'null' || session === 'undefined') {
+    if (session === 'null' || session === 'undefined' || session == null) {
         return false;
     }
 
@@ -166,7 +165,7 @@ $('#division').click(() => {
 })
 
 $('#equals').click(() => {
-    $('#visor-sup').html(visor);
+    $('#visor-sup').html(visor + ' =');
     let calculo = eval(calc);
     visor_inf.html(calculo);
     visor = '';

@@ -228,30 +228,41 @@ a:visited {
     width: 50%;
     border: 1px solid #000;
     align-items: center;
+    background-color: #000;
+    border-radius: 15px;
 }
 
 .center-calc .calc .visor{
-    width: 90%;
+    width: 85%;
     margin-top: 1rem;
     height: 5rem;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 5%;
+    border-radius: 5px;
+    background-color: #5DFF00;
 }
 
 .center-calc .calc .visor .linha-sup{
     width: 90%;
     text-align: left;
     height: 25%;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: .5rem;
 }
 
 .center-calc .calc .visor .linha-inf{
     width: 90%;
     text-align: left;
     height: 75%;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .center-calc .calc .teclas{
@@ -262,6 +273,7 @@ a:visited {
     flex-direction: row;
     justify-content: center;
     overflow: hidden;
+    color: #fff;
 }
 
 .center-calc .calc .teclas .numericas{
@@ -292,6 +304,7 @@ a:visited {
     border: 1px solid;
     margin: 0;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .center-calc .calc .teclas .numericas .num-0{
@@ -304,6 +317,7 @@ a:visited {
     border: 1px solid;
     margin: 0;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .center-calc .calc .teclas .operacoes .op{
@@ -316,6 +330,7 @@ a:visited {
     border: 1px solid;
     margin: 0;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 
