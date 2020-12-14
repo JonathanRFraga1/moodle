@@ -58,10 +58,10 @@ function login() {
 
 function logout() {
     sessionStorage.setItem('user', null);
-    window.location.href = '../../index.html'
+    window.location.href = window.location.hostname + '/index.html'
 }
 
-if (verificaLogin()) { 
+if (verificaLogin()) {
     $('#op-sair').removeClass('hidden');
 }
 
@@ -166,8 +166,14 @@ $('#division').click(() => {
 
 $('#equals').click(() => {
     $('#visor-sup').html(visor + ' =');
-    let calculo = eval(calc);
-    visor_inf.html(calculo);
+
+    try {
+        let calculo = eval(calc);
+        visor_inf.html(calculo);
+    } catch (error) {
+        visor_inf.html("Erro de sintaxe!!!");
+    }
+
     visor = '';
     calc = '';
 })

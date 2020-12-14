@@ -210,6 +210,16 @@ a:visited {
     margin-top: 1rem;
 }
 
+.center-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+}
+
 .center-calc{
     width: 100%;
     display: flex;
@@ -242,6 +252,7 @@ a:visited {
     padding-left: 5%;
     border-radius: 5px;
     background-color: #5DFF00;
+    cursor: default;
 }
 
 .center-calc .calc .visor .linha-sup{
@@ -320,6 +331,12 @@ a:visited {
     border-radius: 5px;
 }
 
+.center-calc .calc .teclas .numericas .num-0:active,
+.center-calc .calc .teclas .numericas .num:active{
+    box-shadow: #fff 3px 3px;
+    transition: all .1s;
+}
+
 .center-calc .calc .teclas .operacoes .op{
     width: 90%;
     height: 19.2%;
@@ -333,6 +350,10 @@ a:visited {
     border-radius: 5px;
 }
 
+.center-calc .calc .teclas .operacoes .op:active{
+    background-color:#ddd;
+    transition: all .05s;
+}
 
 @media(max-width:720px) {
     .div-title {
