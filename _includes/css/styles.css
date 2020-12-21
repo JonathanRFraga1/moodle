@@ -516,4 +516,30 @@ a:visited {
     .center-calc .calc .visor {
         font-size: 1.5rem;
     }
+
+    .center-home {
+        flex-direction: column;
+    }
+
+    .center-home .left {
+        display: none;
+    }
+
+    .center-home .center-col {
+        width: 100%;
+    }
+
+    .center-home .center-col .code {
+        width: 100%;
+    }
+
+    .center-home .side-col {
+        width: 100%;
+    }
+
+    .side-col>div:hover,
+    .center-col>div:hover {
+        box-shadow: #ddd 10px 10px 10px, #ddd -10px -10px 10px;
+        border-radius: 5px;
+    }
 }
