@@ -176,4 +176,30 @@ $('#equals').click(() => {
 
     visor = '';
     calc = '';
-})
+});
+
+function insereAluno() {
+    let nome = $('#input-nome').val();
+    let nota1 = $('#input-nota-1').val();
+    let nota2 = $('#input-nota-2').val();
+
+    if (nome !== '' && nota1 !== '' && nota2 !== '') {
+        let aluno = {
+            nome: nome,
+            nota1: nota1,
+            nota2: nota2
+        }
+
+        let alunos = JSON.parse(sessionStorage.getItem('alunos'));
+        if (alunos == null) {
+            alunos = [];
+        }
+        alunos.push(aluno);
+
+        sessionStorage.setItem('alunos', JSON.stringify(alunos));
+
+        return true;
+    }
+
+    return false;
+}

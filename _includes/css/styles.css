@@ -472,6 +472,67 @@ a:visited {
     padding-left: .5rem;
 }
 
+.content.alunos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content.alunos table {
+    margin-top: 1rem;
+    width: 90%;
+    text-align: center;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+.content.alunos table th,
+.content.alunos table tr {
+    border-bottom: 1px solid #000;
+}
+
+.bt-novo {
+    position: relative;
+    top: 1rem;
+    left: 40%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #DDD;
+    padding: .5rem;
+    border-radius: 7px;
+    transition: none;
+}
+
+.bt-novo:hover {
+    background-color: #CCC;
+}
+
+.bt-novo:active {
+    background-color: #CCC;
+    box-shadow: inset #BBB .2rem .2rem;
+    color: #FFF;
+}
+
+.header-tb {
+    font-weight: bold;
+}
+
+tr.alunos {
+    font-size: 1.5rem;
+}
+
+.aprovado {
+    color: #5DFF00;
+    font-weight: bold;
+}
+
+.reprovado {
+    color: #FF0000;
+    font-weight: bold;
+}
+
 @media(max-width:720px) {
     .div-title {
         width: 100%;
