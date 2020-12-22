@@ -533,6 +533,15 @@ tr.alunos {
     font-weight: bold;
 }
 
+.content .manual {
+    width: 100%;
+    text-align: center;
+}
+
+.content .manual p {
+    margin-top: 1rem;
+}
+
 @media(max-width:720px) {
     .div-title {
         width: 100%;
@@ -602,5 +611,13 @@ tr.alunos {
     .center-col>div:hover {
         box-shadow: #ddd 10px 10px 10px, #ddd -10px -10px 10px;
         border-radius: 5px;
+    }
+
+    .header-tb {
+        font-size: 1.3rem;
+    }
+
+    .bt-novo {
+        left: 30%;
     }
 }
